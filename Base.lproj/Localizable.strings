@@ -1,1 +1,4 @@
 Safer = "Safer";
+URL = "URL";
+Go = "Go";
+Enter.url = "Enter a URL\nand start analysing the web";

@@ -14,6 +14,7 @@
 		CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C6AF0246D4F380093059A /* ContentView.swift */; };
 		CE8C6AF3246D4F390093059A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF2246D4F390093059A /* Assets.xcassets */; };
 		CE8C6AF9246D4F390093059A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF7246D4F390093059A /* LaunchScreen.storyboard */; };
+		CEE899E1246D7ED600A922C4 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE899E0246D7ED600A922C4 /* Rating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE8C6AF2246D4F390093059A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8C6AF8246D4F390093059A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8C6AFA246D4F390093059A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE899E0246D7ED600A922C4 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 				CE8C6AFA246D4F390093059A /* Info.plist */,
 				CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */,
 				CE8C6AF0246D4F380093059A /* ContentView.swift */,
+				CEE899E0246D7ED600A922C4 /* Rating.swift */,
 				CE8C6AEE246D4F380093059A /* Scene.swift */,
 				CE4FAF49246D5B2D008DCE01 /* WebView.swift */,
 				CE8C6AF2246D4F390093059A /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			files = (
 				CE4FAF4C246D5E14008DCE01 /* BadgeView.swift in Sources */,
 				CE4FAF4A246D5B2D008DCE01 /* WebView.swift in Sources */,
+				CEE899E1246D7ED600A922C4 /* Rating.swift in Sources */,
 				CE8C6AEF246D4F380093059A /* Scene.swift in Sources */,
 				CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */,
 			);
