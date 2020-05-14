@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C6AF0246D4F380093059A /* ContentView.swift */; };
 		CE8C6AF3246D4F390093059A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF2246D4F390093059A /* Assets.xcassets */; };
 		CE8C6AF9246D4F390093059A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF7246D4F390093059A /* LaunchScreen.storyboard */; };
-		CEE899E1246D7ED600A922C4 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE899E0246D7ED600A922C4 /* Rating.swift */; };
+		CEE899E4246D855400A922C4 /* Safer in Frameworks */ = {isa = PBXBuildFile; productRef = CEE899E3246D855400A922C4 /* Safer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		CE8C6AF2246D4F390093059A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8C6AF8246D4F390093059A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8C6AFA246D4F390093059A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEE899E0246D7ED600A922C4 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE899E4246D855400A922C4 /* Safer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,6 @@
 				CE8C6AFA246D4F390093059A /* Info.plist */,
 				CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */,
 				CE8C6AF0246D4F380093059A /* ContentView.swift */,
-				CEE899E0246D7ED600A922C4 /* Rating.swift */,
 				CE8C6AEE246D4F380093059A /* Scene.swift */,
 				CE4FAF49246D5B2D008DCE01 /* WebView.swift */,
 				CE8C6AF2246D4F390093059A /* Assets.xcassets */,
@@ -81,6 +80,9 @@
 			dependencies = (
 			);
 			name = SaferDemo;
+			packageProductDependencies = (
+				CEE899E3246D855400A922C4 /* Safer */,
+			);
 			productName = SaferDemo;
 			productReference = CE8C6AE9246D4F380093059A /* SaferDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +111,9 @@
 				Base,
 			);
 			mainGroup = CE8C6AE0246D4F380093059A;
+			packageReferences = (
+				CEE899E2246D855400A922C4 /* XCRemoteSwiftPackageReference "safer" */,
+			);
 			productRefGroup = CE8C6AEA246D4F380093059A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +143,6 @@
 			files = (
 				CE4FAF4C246D5E14008DCE01 /* BadgeView.swift in Sources */,
 				CE4FAF4A246D5B2D008DCE01 /* WebView.swift in Sources */,
-				CEE899E1246D7ED600A922C4 /* Rating.swift in Sources */,
 				CE8C6AEF246D4F380093059A /* Scene.swift in Sources */,
 				CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */,
 			);
@@ -342,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEE899E2246D855400A922C4 /* XCRemoteSwiftPackageReference "safer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ecosia/safer.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEE899E3246D855400A922C4 /* Safer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE899E2246D855400A922C4 /* XCRemoteSwiftPackageReference "safer" */;
+			productName = Safer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE8C6AE1246D4F380093059A /* Project object */;
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Safer",
+        "repositoryURL": "https://github.com/ecosia/safer.git",
+        "state": {
+          "branch": "master",
+          "revision": "1c19815e9a265f1a2f41ac3f87a706618265fd09",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

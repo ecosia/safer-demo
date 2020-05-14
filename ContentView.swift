@@ -1,10 +1,11 @@
 import SwiftUI
+import Safer
 
 struct ContentView: View {
     @State private var text = ""
     @State private var url = ""
     @State private var searched = false
-    @State private var rating = Rating.unknown
+    @State private var report = Report.new
     
     var body: some View {
         NavigationView {
@@ -31,7 +32,7 @@ struct ContentView: View {
                         .padding()
                 }
             }.navigationBarTitle(.init("Safer"), displayMode: searched ? .inline : .large)
-                .navigationBarItems(trailing: BadgeView(rating: $rating))
+                .navigationBarItems(trailing: BadgeView(report: $report))
         }
     }
     
