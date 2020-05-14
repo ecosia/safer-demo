@@ -4,8 +4,14 @@ import SwiftUI
 struct WebView: UIViewRepresentable {
     @Binding var url: String
     
+    func makeCoordinator() -> Coordinator {
+        .init(self)
+    }
+    
     func makeUIView(context: Context) -> WKWebView {
-        WKWebView()
+        let webView = WKWebView()
+        context.coordinator.prepare(webView)
+        return webView
     }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
