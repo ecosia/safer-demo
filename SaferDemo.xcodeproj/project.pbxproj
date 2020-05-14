@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4FAF4A246D5B2D008DCE01 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FAF49246D5B2D008DCE01 /* WebView.swift */; };
+		CE4FAF4C246D5E14008DCE01 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */; };
+		CE4FAF4F246D5E5D008DCE01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE4FAF4D246D5E5D008DCE01 /* Localizable.strings */; };
 		CE8C6AEF246D4F380093059A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C6AEE246D4F380093059A /* Scene.swift */; };
 		CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C6AF0246D4F380093059A /* ContentView.swift */; };
 		CE8C6AF3246D4F390093059A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF2246D4F390093059A /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4FAF49246D5B2D008DCE01 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		CE4FAF4E246D5E5D008DCE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE8C6AE9246D4F380093059A /* SaferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8C6AEE246D4F380093059A /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		CE8C6AF0246D4F380093059A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,10 +43,13 @@
 			isa = PBXGroup;
 			children = (
 				CE8C6AFA246D4F390093059A /* Info.plist */,
+				CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */,
 				CE8C6AF0246D4F380093059A /* ContentView.swift */,
 				CE8C6AEE246D4F380093059A /* Scene.swift */,
+				CE4FAF49246D5B2D008DCE01 /* WebView.swift */,
 				CE8C6AF2246D4F390093059A /* Assets.xcassets */,
 				CE8C6AF7246D4F390093059A /* LaunchScreen.storyboard */,
+				CE4FAF4D246D5E5D008DCE01 /* Localizable.strings */,
 				CE8C6AEA246D4F380093059A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8C6AF9246D4F390093059A /* LaunchScreen.storyboard in Resources */,
+				CE4FAF4F246D5E5D008DCE01 /* Localizable.strings in Resources */,
 				CE8C6AF3246D4F390093059A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4FAF4C246D5E14008DCE01 /* BadgeView.swift in Sources */,
+				CE4FAF4A246D5B2D008DCE01 /* WebView.swift in Sources */,
 				CE8C6AEF246D4F380093059A /* Scene.swift in Sources */,
 				CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */,
 			);
@@ -131,6 +143,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CE4FAF4D246D5E5D008DCE01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4FAF4E246D5E5D008DCE01 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CE8C6AF7246D4F390093059A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SaferDemo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,7 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SaferDemo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

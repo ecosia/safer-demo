@@ -2,6 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            WebView()
+                .navigationBarTitle(.init("Safer"), displayMode: .large)
+                .navigationBarItems(trailing: BadgeView())
+        }
     }
 }
