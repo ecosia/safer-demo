@@ -1,6 +1,6 @@
 import WebKit
 
-final class Coordinator {
+final class Coordinator: NSObject, WKNavigationDelegate {
     private var observations = Set<NSKeyValueObservation>()
     private let webView: WebView
     
@@ -13,6 +13,7 @@ final class Coordinator {
     }
     
     func prepare(_ webView: WKWebView) {
+        webView.navigationDelegate = self
         observations.insert(webView.observe(\.url, options: .new) { [weak self] in
             $1.newValue?.map {
                 print($0)
@@ -21,9 +22,13 @@ final class Coordinator {
         observations.insert(webView.observe(\.title, options: .new) { [weak self, weak webView] in
             guard let title = $1.newValue as? String, !title.isEmpty, let webView = webView else { return }
             print("title \(title)")
-            webView.configuration.websiteDataStore.httpCookieStore.getAllCookies {
-                print("cookies: \($0)")
-            }
+            
         })
+    }
+    
+    func webView(_ webView: WKWebView, didFinish: WKNavigation!) {
+        webView.configuration.websiteDataStore.httpCookieStore.getAllCookies {
+            print("cookies: \($0)")
+        }
     }
 }
