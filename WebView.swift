@@ -3,6 +3,7 @@ import SwiftUI
 
 struct WebView: UIViewRepresentable {
     @Binding var url: String
+    @Binding var progress: CGFloat
     
     func makeCoordinator() -> Coordinator {
         .init(self)

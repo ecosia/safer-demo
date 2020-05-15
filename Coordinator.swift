@@ -2,10 +2,10 @@ import WebKit
 
 final class Coordinator: NSObject, WKNavigationDelegate {
     private var observations = Set<NSKeyValueObservation>()
-    private let webView: WebView
+    private let view: WebView
     
-    init(_ webView: WebView) {
-        self.webView = webView
+    init(_ view: WebView) {
+        self.view = view
     }
     
     deinit {
@@ -24,9 +24,14 @@ final class Coordinator: NSObject, WKNavigationDelegate {
             print("title \(title)")
             
         })
+        
+        observations.insert(webView.observe(\.estimatedProgress, options: .new) { [weak self] in
+            $1.newValue.map { self?.view.progress = .init($0) }
+        })
     }
     
     func webView(_ webView: WKWebView, didFinish: WKNavigation!) {
+        view.progress = 1
         webView.configuration.websiteDataStore.httpCookieStore.getAllCookies {
             print("cookies: \($0)")
         }

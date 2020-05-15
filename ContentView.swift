@@ -5,6 +5,7 @@ struct ContentView: View {
     @State private var text = ""
     @State private var url = ""
     @State private var searched = false
+    @State private var progress = CGFloat(1)
     @State private var report = Report.new
     
     var body: some View {
@@ -17,14 +18,17 @@ struct ContentView: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
                     Button(action: commit) {
                         Text(.init("Go"))
                     }
-                    
                 }.padding()
+                Rectangle()
+                    .foregroundColor(progress < 1 ? .secondary : .clear)
+                    .frame(height: 6)
+                    .cornerRadius(3)
+                    .padding(.horizontal, 20)
                 if searched {
-                    WebView(url: $url)
+                    WebView(url: $url, progress: $progress)
                 } else {
                     Text("Enter.url")
                         .foregroundColor(.secondary)
