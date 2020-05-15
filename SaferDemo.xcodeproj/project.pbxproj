@@ -14,6 +14,7 @@
 		CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C6AF0246D4F380093059A /* ContentView.swift */; };
 		CE8C6AF3246D4F390093059A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF2246D4F390093059A /* Assets.xcassets */; };
 		CE8C6AF9246D4F390093059A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C6AF7246D4F390093059A /* LaunchScreen.storyboard */; };
+		CEA051B1246E971E001ACF9A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA051B0246E971E001ACF9A /* ProgressView.swift */; };
 		CEE899E4246D855400A922C4 /* Safer in Frameworks */ = {isa = PBXBuildFile; productRef = CEE899E3246D855400A922C4 /* Safer */; };
 		CEE899E6246D8D4C00A922C4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE899E5246D8D4C00A922C4 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		CE8C6AF2246D4F390093059A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8C6AF8246D4F390093059A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8C6AFA246D4F390093059A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA051B0246E971E001ACF9A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		CEE899E5246D8D4C00A922C4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 				CE4FAF4B246D5E14008DCE01 /* BadgeView.swift */,
 				CE8C6AF0246D4F380093059A /* ContentView.swift */,
 				CEE899E5246D8D4C00A922C4 /* Coordinator.swift */,
+				CEA051B0246E971E001ACF9A /* ProgressView.swift */,
 				CE8C6AEE246D4F380093059A /* Scene.swift */,
 				CE4FAF49246D5B2D008DCE01 /* WebView.swift */,
 				CE8C6AF2246D4F390093059A /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				CEE899E6246D8D4C00A922C4 /* Coordinator.swift in Sources */,
 				CE8C6AEF246D4F380093059A /* Scene.swift in Sources */,
 				CE8C6AF1246D4F380093059A /* ContentView.swift in Sources */,
+				CEA051B1246E971E001ACF9A /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

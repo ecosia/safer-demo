@@ -1,5 +1,6 @@
 import WebKit
 import SwiftUI
+import Combine
 
 struct WebView: UIViewRepresentable {
     @Binding var url: String

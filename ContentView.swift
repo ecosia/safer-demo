@@ -22,9 +22,10 @@ struct ContentView: View {
                         Text(.init("Go"))
                     }
                 }.padding()
-                Rectangle()
-                    .foregroundColor(progress < 1 ? .secondary : .clear)
-                    .frame(height: 6)
+                ProgressView(progress: progress)
+                    .stroke(progress < 1 ? Color.accentColor : .clear,
+                            style: .init(lineWidth: 4, lineCap: .round))
+                    .frame(height: 4)
                     .cornerRadius(3)
                     .padding(.horizontal, 20)
                 if searched {
