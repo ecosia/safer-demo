@@ -1,12 +1,14 @@
 import SwiftUI
 import Safer
 
+let coordinator = Coordinator()
+
 struct ContentView: View {
+    @State var progress = CGFloat(1)
+    @State var report = Report.new
     @State private var text = ""
     @State private var url = ""
     @State private var searched = false
-    @State private var progress = CGFloat(1)
-    @State private var report = Report.new
     
     var body: some View {
         NavigationView {
@@ -29,7 +31,7 @@ struct ContentView: View {
                     .cornerRadius(3)
                     .padding(.horizontal, 20)
                 if searched {
-                    WebView(url: $url, progress: $progress)
+                    WebView(url: $url)
                 } else {
                     Text("Enter.url")
                         .foregroundColor(.secondary)
@@ -38,6 +40,8 @@ struct ContentView: View {
                 }
             }.navigationBarTitle(.init("Safer"), displayMode: searched ? .inline : .large)
                 .navigationBarItems(trailing: BadgeView(report: $report))
+        }.onAppear {
+            coordinator.contentView = self
         }
     }
     

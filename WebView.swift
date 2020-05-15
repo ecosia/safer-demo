@@ -4,10 +4,10 @@ import Combine
 
 struct WebView: UIViewRepresentable {
     @Binding var url: String
-    @Binding var progress: CGFloat
     
     func makeCoordinator() -> Coordinator {
-        .init(self)
+        coordinator.view = self
+        return coordinator
     }
     
     func makeUIView(context: Context) -> WKWebView {
