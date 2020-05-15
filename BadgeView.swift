@@ -6,15 +6,15 @@ struct BadgeView: View {
     
     private var image: String {
         switch report.rating {
-        case .good: return "lock.circle.fill"
+        case .good, .unknown: return "lock.circle.fill"
         default: return "lock.open.fill"
         }
     }
     
     private var color: Color {
         switch report.rating {
-        case .good: return .accentColor
-        default: return .primary
+        case .good, .unknown: return .accentColor
+        default: return Color.red
         }
     }
     
